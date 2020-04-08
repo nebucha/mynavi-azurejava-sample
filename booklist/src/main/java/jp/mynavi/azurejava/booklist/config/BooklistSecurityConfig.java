@@ -28,7 +28,7 @@ public class BooklistSecurityConfig extends WebSecurityConfigurerAdapter {
         corsConfiguration.setAllowedMethods(Arrays.asList("POST","GET"));       // 許可するHTTPメソッド
         corsConfiguration.addAllowedHeader(CorsConfiguration.ALL);
         corsConfiguration.addAllowedOrigin("http://localhost:8081");                            // 許可するオリジン（ローカルテスト用）
-        corsConfiguration.addAllowedOrigin("https://azurejavastorage.z11.web.core.windows.net");   // 許可するオリジン（Blob Storage用）
+        corsConfiguration.addAllowedOrigin("https://mynavistorage.z11.web.core.windows.net");   // 許可するオリジン（Blob Storage用）
 
         UrlBasedCorsConfigurationSource corsSource = new UrlBasedCorsConfigurationSource();
         corsSource.registerCorsConfiguration("/api/**", corsConfiguration);     // このフィルタの対象URL
