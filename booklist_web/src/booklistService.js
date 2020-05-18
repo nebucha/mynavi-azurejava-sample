@@ -1,6 +1,6 @@
 // Web APIのベースURL
 //const URL_BASE = 'http://localhost:8080/api/'                                   // ローカルテスト用
-const URL_BASE = 'https://booklist-mynaviazurejava.azurewebsites.net/api/'    // App Service用
+const URL_BASE = 'https://YOUR_APPNAME.azurewebsites.net/api/'    // App Service用
 import Vue from 'vue'
 import axios from 'axios'
 
